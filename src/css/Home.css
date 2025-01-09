@@ -1,0 +1,8 @@
+.PostCard {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    text-align: justify;
+}

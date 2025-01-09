@@ -1,0 +1,102 @@
+/* Container bao quanh form */
+.Form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+.Form h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Các label cho mỗi trường input */
+.Form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Các trường input và textarea */
+.Form input,
+textarea {
+    width: 95%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Form input:focus,
+textarea:focus {
+    border-color: #4caf50;
+}
+
+/* Các textarea */
+.Form textarea {
+    resize: none;
+    min-height: 100px;
+    max-height: 500px;
+    padding-top: 10px;
+}
+
+/* Nút submit */
+.Form button[type="submit"] {
+    width: 98%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Form button:hover {
+    background-color: #45a049;
+}
+
+/* Các field không bắt buộc */
+.Form input[type="date"] {
+    background-color: #f3f3f3;
+}
+
+/* Căn giữa các thành phần */
+.Form button[type="submit"] {
+    text-align: center;
+}
+
+/* Cải thiện cách hiển thị form ở các màn hình nhỏ */
+@media (max-width: 768px) {
+    .Form div {
+        padding: 10px;
+    }
+
+    .Form h1 {
+        font-size: 20px;
+    }
+
+    .Form input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 14px;
+    }
+
+    .Form button[type="submit"] {
+        font-size: 14px;
+    }
+}

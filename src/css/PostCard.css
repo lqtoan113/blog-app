@@ -1,0 +1,38 @@
+.PostCardItem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.PostCardItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.PostCardItem h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.PostCardItem p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.PostCardItem small {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.PostCardItem .Category {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 500;
+}
