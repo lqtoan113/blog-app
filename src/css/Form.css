@@ -1,13 +1,14 @@
 /* Container bao quanh form */
 .Form {
-    max-width: 600px;
+    max-width: 65%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: #f5f5f5;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
-
 /* Tiêu đề */
 .Form h1 {
     text-align: center;
@@ -45,7 +46,7 @@ textarea:focus {
     border-color: #4caf50;
 }
 
-/* Các textarea */
+
 .Form textarea {
     resize: none;
     min-height: 100px;
@@ -53,34 +54,37 @@ textarea:focus {
     padding-top: 10px;
 }
 
-/* Nút submit */
-.Form button[type="submit"] {
+
+.Form .Button {
+    display: flex;
     width: 98%;
+    gap: 16px;
+   
+}
+.Button button {
+    width: 30%;
+    text-align: center;
+    height: 40px;
     padding: 12px;
     font-size: 16px;
-    background-color: #4caf50;
     color: white;
+    background-color: #8bbc8e;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-.Form button:hover {
+.Button button:hover {
+   
     background-color: #45a049;
 }
 
-/* Các field không bắt buộc */
+
 .Form input[type="date"] {
     background-color: #f3f3f3;
 }
 
-/* Căn giữa các thành phần */
-.Form button[type="submit"] {
-    text-align: center;
-}
 
-/* Cải thiện cách hiển thị form ở các màn hình nhỏ */
 @media (max-width: 768px) {
     .Form div {
         padding: 10px;
@@ -100,3 +104,6 @@ textarea:focus {
         font-size: 14px;
     }
 }
+
+ 
+  

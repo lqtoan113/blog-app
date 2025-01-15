@@ -1,8 +1,44 @@
+.Container{
+    display: flex;
+}
 .PostCard {
+    width: 70%;
+    height: auto;
     list-style-type: none;
     padding: 0;
-    margin: 10px;
+    margin:  10px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1.5fr));
     text-align: justify;
 }
+.SideBar{
+    flex: 1;
+    background: #f9f9f9;
+    padding: 16px;
+}
+.Content{
+    flex: 4;
+}
+.CreateButton {
+    position: fixed; /* Đặt vị trí cố định trên màn hình */
+    bottom: 20px;    /* Cách đáy màn hình 20px */
+    right: 20px;     /* Cách lề phải 20px */
+    width: 60px;     /* Đường kính của nút */
+    height: 60px;    /* Đường kính của nút */
+    border-radius: 50%; /* Tạo hình tròn */
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white;    /* Màu chữ */
+    border: none;    /* Bỏ viền */
+    display: flex;
+    justify-content: center; /* Căn giữa chữ trong nút */
+    align-items: center;     /* Căn giữa chữ trong nút */
+    font-size: 16px;  /* Kích thước chữ */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+  
+  .CreateButton:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+  }
+  
